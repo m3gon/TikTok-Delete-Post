@@ -39,11 +39,11 @@ class Main:
                             input()
                             exit(0)
                 self.get_id_your_account(self.cursor)
-            except Exception as error:
-                print(error)
-                pass
-        except Exception as errorr:
-            print(errorr)
+            except:
+                print(f'[{self.red}+{self.reset}] Error To Get Id Posts\n[{self.red}+{self.reset}] Press Enter To Exit')
+                input()
+                exit(0)
+        except:
             pass
     def delete_posts(self, url, headers, data):
         return requests.post(url, headers=headers, data=data).text
