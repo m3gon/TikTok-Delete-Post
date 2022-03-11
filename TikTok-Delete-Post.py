@@ -38,7 +38,7 @@ class Main:
                             print(f'\n[{self.green}+{self.reset}] Successfully Deleted All Posts\n[{self.green}+{self.reset}] Press Enter To Exit')
                             input()
                             exit(0)
-                self.get_id_your_account(self.cursor)
+                self.get_all_id_post(self.cursor)
             except:
                 print(f'[{self.red}+{self.reset}] Error To Get Id Posts\n[{self.red}+{self.reset}] Press Enter To Exit')
                 input()
